@@ -15,6 +15,7 @@ import re
 # YAML for individual pages
 
 ## need to remove all non digit from yaml
+## can perhaps try to add back in links.
 
 def YAML(name):
     line1 = "-" * 3 + "\n"
