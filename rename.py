@@ -19,7 +19,7 @@ import re
 
 def YAML(name):
     line1 = "-" * 3 + "\n"
-    line2 = "title: " + name
+    line2 = "title: " + name + "\n"
     line3 = 'layout: page \n'
     line4 = line1 + "\n"
     return line1 + line2 + line3 + line4
@@ -59,8 +59,8 @@ def individual(rootdir):
 
                     # copy rest of document into new file
                 for line in infile:
-                    outfile.write(line.replace("[","").replace("]","") + '\n') # try and take out any reference links as seems to be causing an error
-                outfile.write("end")
+                    outfile.write(line + '\n')
+
 
                 print('done' , fl)
                     # close files
